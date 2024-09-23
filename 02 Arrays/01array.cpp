@@ -1,34 +1,33 @@
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-
-int main(){
+int main()
+{
 
 	int marks[100] = {-1};
 
 	int n;
-	cout<<"Enter the no of students ";
-	cin>>n;
+	cout << "Enter the no of students ";
+	cin >> n;
 
+	// Input
+	for (int i = 1; i <= n; i++)
+	{
+		cin >> marks[i];
 
-	//Input
-	for(int i=1; i<=n; i++){
-		cin>> marks[i];
-
-		marks[i] = marks[i]*2;
+		marks[i] = marks[i] * 2;
 	}
 
-	//Update 
+	// Update
 
-
-	//Output
-	for(int i=0;i<100;i++){
-		cout<< marks[i] <<" ,";
+	// Output
+	for (int i = 0; i < 100; i++)
+	{
+		cout << marks[i] << " ,";
 	}
 
-	cout <<endl;
-
+	cout << endl;
 
 	return 0;
 }
